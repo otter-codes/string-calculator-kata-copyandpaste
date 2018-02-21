@@ -29,12 +29,12 @@ class StringCalculatorSpec extends WordSpec with MustMatchers {
       StringCalculator.add("1\n2,3") mustEqual 6
     }
 
-    "return 3 when provided with the String '//;\n1;2' " ignore {
+    "return 3 when provided with the String '//;\n1;2' " in {
       StringCalculator.add("//;\n1;2") mustEqual 3
     }
 
     "throw Illegal Argument Exception with message 'requirement failed: -2,-3' when provided with String '1,-2,-3'" ignore {
-      StringCalculator.add("1,-2,-3") mustEqual 0
+      StringCalculator.add("1,-2,-3")  mustEqual  0
     }
   }
 }
