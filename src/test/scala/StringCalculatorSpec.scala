@@ -33,8 +33,8 @@ class StringCalculatorSpec extends WordSpec with MustMatchers {
       StringCalculator.add("//;\n1;2") mustEqual 3
     }
 
-    "throw Illegal Argument Exception with message 'requirement failed: -2,-3' when provided with String '1,-2,-3'" ignore {
-      StringCalculator.add("1,-2,-3")  mustEqual  0
+    "throw Illegal Argument Exception with message 'requirement failed: -2,-3' when provided with String '1,-2,-3'" in {
+      StringCalculator.add("1,-2,-3")  mustEqual s"requirement failed: -2, -3"
     }
   }
 }
