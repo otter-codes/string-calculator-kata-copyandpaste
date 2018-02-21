@@ -6,7 +6,6 @@ class StringCalculatorSpec extends WordSpec with MustMatchers  {
 
     "return Integer 0 when provided with Empty string " in {
 
-      add 
 
     }
 
