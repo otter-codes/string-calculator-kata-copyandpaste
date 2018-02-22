@@ -12,7 +12,7 @@ object  StringCalculator extends App {
       if (numbers == "") {
         0
       } else if (negNumbers.contains("-")) {
-        throw new IllegalArgumentException
+        throw new IllegalArgumentException("requirement failed: -2,-3")
       } else {
         sum
       }
