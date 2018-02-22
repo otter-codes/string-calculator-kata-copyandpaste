@@ -26,3 +26,4 @@ class StringCalculatorSpec extends WordSpec with MustMatchers {
   }
 
 }
+
