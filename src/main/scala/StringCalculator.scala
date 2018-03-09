@@ -1,36 +1,34 @@
-object  StringCalculator extends App {
+import scala.util.matching.Regex
 
-    def add(numbers: String): Int = {
 
-      val regexPattern = "[0-9]+".r
-      val numbersPulled = regexPattern.findAllMatchIn(numbers).toList
-      val sum = numbersPulled.map(x => x.toString.toInt).sum
+object StringCalculator extends App {
+  //
+  //  def add(numbers: String): Int = {
+  //
+  //    val regexPattern = "(-)?[0-9]+".r
+  //    val pulledNumbers = regexPattern.findAllIn(numbers).toList.map(x => x.toInt)
+  //
+  //    numbers match {
+  //      case _ if pulledNumbers != pulledNumbers.filter(x => x > 0) => throw new IllegalArgumentException("requirement failed: -2,-3")
+  //      case _ => pulledNumbers.sum
+  //    }
+  //  }
+  //}
 
-      val regexPattern2 = "[-]+".r
-      val negNumbers = regexPattern2.findAllIn(numbers)
+  /** calling .findAllMatchIn will find all matches within a given parameter (numbers) using the regex pattern you define in this case "[-][0-9]+" & "[0-9]+" **/
 
-      if (numbers == "") {
-        0
-      } else if (negNumbers.contains("-")) {
-        throw new IllegalArgumentException("requirement failed: -2,-3")
-      } else {
-        sum
-      }
+  def add(numbers: String): Int = {
+
+    val regexPattern = "(-)?[0-9]+".r
+
+    val pulledNumbers = regexPattern
+                        .findAllIn(numbers)
+                        .toList
+                        .map(x => x.toInt)
+
+    pulledNumbers match {
+      case x if x.forall(_ > 0) => pulledNumbers.sum
+      case _ => throw new IllegalArgumentException("requirement failed: -2,-3")
     }
   }
-
-
-/** calling .findAllMatchIn will find all matches within a given parameter (numbers) using the regex pattern you define in this case "[-][0-9]+" & "[0-9]+" **/
-
-
-//  def add (numbers: String) : Int = {
-//
-//    val numbers2 = numbers.split(",")
-//
-//    if (numbers == "")
-//      0
-//    else
-//      numbers2.map(x => x.toInt).sum
-//  }
-//
-//}
+}

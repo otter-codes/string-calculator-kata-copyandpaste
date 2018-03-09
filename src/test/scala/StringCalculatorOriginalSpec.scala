@@ -1,19 +1,20 @@
 import org.scalatest.{MustMatchers, WordSpec}
 
-class StringCalculatorSpec extends WordSpec with MustMatchers {
+class StringCalculatorOriginalSpec extends WordSpec with MustMatchers {
 
-  "StringCalculator" must {
+  "StringCalculatorOriginal" must {
 
-    "return Integer 0 when provided with Empty string '' " in {
+    "return Interger 0 when provided with Empty String '' " in {
 
-      StringCalculator.add("") mustEqual 0
-
+      StringCalculatorOriginal.add("") mustEqual 0
     }
+
     "return Integer 1 when provided with String '1' " in {
       StringCalculator.add("1") mustEqual 1
 
     }
-    "return Integer 42 when provided with String '42' " in {
+
+    "return Int 42 when provided with String '42'"  in {
       StringCalculator.add("42") mustEqual 42
     }
 
@@ -40,7 +41,6 @@ class StringCalculatorSpec extends WordSpec with MustMatchers {
       }
       x.getMessage mustEqual "requirement failed: -2,-3"
     }
-
   }
-}
 
+}
