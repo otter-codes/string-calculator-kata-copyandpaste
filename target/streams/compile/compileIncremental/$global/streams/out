@@ -14,17 +14,16 @@
 [0m[[0mdebug[0m] [0m[naha] 	external source: Set()[0m
 [0m[[0mdebug[0m] [0mAll initially invalidated sources: Set(/home/digital032675/academy/string-calculator-kata-copyandpaste/src/main/scala/StringCalculator.scala)[0m
 [0m[[0mdebug[0m] [0m[naha] Initial set of included nodes: Set(/home/digital032675/academy/string-calculator-kata-copyandpaste/src/main/scala/StringCalculator.scala)[0m
-[0m[[0mdebug[0m] [0m[naha] Recompiling all 1 sources: invalidated sources (1) exceeded 50.0% of all sources[0m
 [0m[[0minfo[0m] [0mCompiling 1 Scala source to /home/digital032675/academy/string-calculator-kata-copyandpaste/target/scala-2.12/classes...[0m
 [0m[[0mdebug[0m] [0mGetting org.scala-sbt:compiler-interface:0.13.16:component from component compiler for Scala 2.12.4[0m
 [0m[[0mdebug[0m] [0mGetting org.scala-sbt:compiler-interface:0.13.16:component from component compiler for Scala 2.12.4[0m
-[0m[[0mdebug[0m] [0mRunning cached compiler 54a2ce7, interfacing (CompilerInterface) with Scala compiler version 2.12.4[0m
+[0m[[0mdebug[0m] [0mRunning cached compiler 22d945e2, interfacing (CompilerInterface) with Scala compiler version 2.12.4[0m
 [0m[[0mdebug[0m] [0mCalling Scala compiler with arguments  (CompilerInterface):[0m
 [0m[[0mdebug[0m] [0m	-bootclasspath[0m
 [0m[[0mdebug[0m] [0m	/usr/lib/jvm/java-8-oracle/jre/lib/resources.jar:/usr/lib/jvm/java-8-oracle/jre/lib/rt.jar:/usr/lib/jvm/java-8-oracle/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jsse.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jce.jar:/usr/lib/jvm/java-8-oracle/jre/lib/charsets.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jfr.jar:/usr/lib/jvm/java-8-oracle/jre/classes:/home/digital032675/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.12.4.jar[0m
 [0m[[0mdebug[0m] [0m	-classpath[0m
 [0m[[0mdebug[0m] [0m	/home/digital032675/academy/string-calculator-kata-copyandpaste/target/scala-2.12/classes:/home/digital032675/.ivy2/cache/org.scalactic/scalactic_2.12/bundles/scalactic_2.12-3.0.4.jar:/home/digital032675/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.12.4.jar[0m
-[0m[[0mdebug[0m] [0mScala compilation took 0.141453942 s[0m
+[0m[[0mdebug[0m] [0mScala compilation took 0.225707596 s[0m
 [0m[[0mdebug[0m] [0m[naha] New invalidations:[0m
 [0m[[0mdebug[0m] [0m[naha] 	Set()[0m
 [0m[[0mdebug[0m] [0m[naha] Initial set of included nodes: Set()[0m
